@@ -3,3 +3,4 @@ django-bootstrap5
 numpy
 sklearn
 bcrypt
+pip install --upgrade pip
