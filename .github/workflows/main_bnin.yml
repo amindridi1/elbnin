@@ -16,7 +16,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       - name: Set up Python version
         uses: actions/setup-python@v1
         with:
@@ -26,8 +25,9 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-      -name: pip    
+      - name: pip  upgrade  
         run: pip install --upgrade pip
+        
       - name: Install dependencies
         
         run: pip install -r requirements.txt
